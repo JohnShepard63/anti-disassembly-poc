@@ -1,0 +1,28 @@
+name: Build x64 and ARM32 Binaries
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install ARM GCC
+        run: sudo apt install -y gcc-arm-linux-gnueabihf gcc-aarch64-linux-gnu qemu-user-static 
+
+      - name: Build ARM32 binary
+        run: make arm32_binary
+
+      - name: Build ARM64 binary
+        run: make arm64_binary
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: binaries
+          path: |
+            build
