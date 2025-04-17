@@ -1,6 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
+// for ARM32 & ARM64
+
 int main() {
     int a = 3;
     int b = 2;

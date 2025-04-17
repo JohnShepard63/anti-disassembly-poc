@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// for ARM32 & ARM64
+
 int main() {
     __asm__ volatile(
         "b skip_deadcode\n"
