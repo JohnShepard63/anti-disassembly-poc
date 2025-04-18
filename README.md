@@ -62,6 +62,6 @@ Uses a conditional branch with a complex mathematical condition to hide invalid 
   - Now missing...
 - https://github.com/AppleReer/Anti-Disassembly-On-Arm64
 
-- My own blog posts:
-- https://tech-blog.sterrasec.com/entry/2024/04/12/151113
-- https://tech-blog.sterrasec.com/entry/2024/07/12/111416
+- My blog posts(Japanese):
+  - https://tech-blog.sterrasec.com/entry/2024/04/12/151113
+  - https://tech-blog.sterrasec.com/entry/2024/07/12/111416
